@@ -13,3 +13,10 @@ const calcNewVelocity = (acceleration, velocity, duration) => {
 if (typeof acceleration !== 'number' || typeof velocity !== 'number' || typeof duration !== 'number') {
   throw new Error('Invalid input parameters for calcNewVelocity function');
 }
+
+ // Calculate new velocity based on acceleration
+ const newVelocity = velocity + (acceleration * duration);
+
+ return newVelocity;
+}
+
