@@ -25,4 +25,7 @@ if (velocity.unit !== 'km/h' || acceleration.unit !== 'm/s^2' || duration.unit !
   throw new Error('Invalid unit of measurement for one or more input parameters');
 }
 
+// Convert units to a common unit (m/s, m, kg)
+const velocityInMetersPerSecond = velocity.value / 3.6;
+const initialDistanceInMeters = initialDistance.value * 1000;
 
