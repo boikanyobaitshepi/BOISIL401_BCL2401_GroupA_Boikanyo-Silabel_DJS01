@@ -41,5 +41,5 @@ const newVelocityInMetersPerSecond = calcNewVelocity(acceleration.value, velocit
 const newVelocityInKilometersPerHour = newVelocityInMetersPerSecond * 3.6;
 
 console.log(`Corrected New Velocity: ${newVelocityInKilometersPerHour} km/h`);
-console.log(Corrected New Distance: ${newDistanceInKilometers} km);
-console.log(Corrected Remaining Fuel: ${remainingFuelInKilograms} kg);
+console.log(`Corrected New Distance: ${newDistanceInKilometers} km`);
+console.log(`Corrected Remaining Fuel: ${remainingFuelInKilograms} kg`);
