@@ -20,3 +20,9 @@ if (typeof acceleration !== 'number' || typeof velocity !== 'number' || typeof d
  return newVelocity;
 }
 
+// Validate input parameters
+if (velocity.unit !== 'km/h' || acceleration.unit !== 'm/s^2' || duration.unit !== 's' || initialDistance.unit !== 'km' || fuelAmount.unit !== 'kg' || fuelBurnRate.unit !== 'kg/s') {
+  throw new Error('Invalid unit of measurement for one or more input parameters');
+}
+
+
